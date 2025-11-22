@@ -16,10 +16,10 @@ export function Navigation() {
   return (
     <nav className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <div className="flex-shrink-0">
-            <a href="#home">
-              <Logo variant="abbreviated" />
+        <div className="flex justify-between items-center py-2">
+          <div className="flex-shrink-0 max-w-xs">
+            <a href="#home" className="inline-flex items-center">
+              <Logo variant="branded" size="xl" className="max-w-xs"/>
             </a>
           </div>
 

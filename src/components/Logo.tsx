@@ -1,26 +1,51 @@
-import { Network } from "lucide-react";
-
 interface LogoProps {
-  variant?: "full" | "abbreviated";
+  variant?: "icon" | "full" | "branded";
   className?: string;
+  size?: "sm" | "md" | "lg" | "xl";
 }
 
-export function Logo({ variant = "abbreviated", className = "" }: LogoProps) {
+const sizeMap = {
+  sm: "h-8",
+  md: "h-12",
+  lg: "h-16",
+  xl: "h-20",
+};
+
+export function Logo({ 
+  variant = "icon", 
+  className = "", 
+  size = "md" 
+}: LogoProps) {
+  const sizeClass = sizeMap[size];
+  
+  if (variant === "branded") {
+    return (
+      <img 
+        src="/logo-with-blue-text.svg" 
+        alt="ISGRN - Intelligent Solutions Global Resources Nigeria"
+        className={`${sizeClass} w-auto object-contain ${className}`}
+        style={{ width: 150, display: 'block' }}
+      />
+    );
+  }
+  
+  if (variant === "full") {
+    return (
+      <img 
+        src="/logo-with-text.svg" 
+        alt="ISGRN - Intelligent Solutions Global Resources Nigeria"
+        className={`${sizeClass} w-auto object-contain ${className}`}
+        style={{ display: 'block' }}
+      />
+    );
+  }
+
   return (
-    <div className={`flex items-center gap-2 ${className}`}>
-      <div className="bg-blue-600 p-2 rounded-lg">
-        <Network className="h-6 w-6 text-white" />
-      </div>
-      <div className="flex flex-col">
-        <span className="text-blue-600 tracking-tight leading-none">
-          {variant === "full" ? "Intelligent Solutions Global Resources Nigeria" : "ISGRN"}
-        </span>
-        {variant === "abbreviated" && (
-          <span className="text-gray-500 leading-none">
-            Intelligent Solutions
-          </span>
-        )}
-      </div>
-    </div>
+    <img 
+      src="/logo-only.svg" 
+      alt="ISGRN Logo"
+      className={`${sizeClass} w-auto object-contain ${className}`}
+      style={{ display: 'block' }}
+    />
   );
 }

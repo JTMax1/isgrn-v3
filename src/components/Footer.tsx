@@ -25,8 +25,10 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="mb-4">
-              <Logo variant="full" className="[&_span]:text-white [&_.bg-blue-600]:bg-white [&_.text-white]:text-blue-600" />
+            <div className="mb-6">
+              <div className="w-48 h-auto filter brightness-200 invert">
+                <Logo variant="full" size="lg" />
+              </div>
             </div>
             <p className="mb-4 text-gray-400">
               Nigeria's premier telecommunications and infrastructure solutions provider. 
