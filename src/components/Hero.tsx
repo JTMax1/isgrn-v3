@@ -1,6 +1,8 @@
+"use client";
+
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Button } from "./ui/button";
-import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export function Hero() {
@@ -41,14 +43,6 @@ export function Hero() {
 
     return () => clearInterval(timer);
   }, [slides.length]);
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-  };
 
   const goToSlide = (index: number) => {
     setCurrentSlide(index);
@@ -110,22 +104,6 @@ export function Hero() {
             </div>
           </div>
         </div>
-
-        {/* Navigation Arrows */}
-        <button
-          onClick={prevSlide}
-          className="absolute left-4 top-1/2 -translate-y-1/2 z-30 bg-white/20 hover:bg-white/30 backdrop-blur-sm p-2 rounded-full transition-all"
-          aria-label="Previous slide"
-        >
-          <ChevronLeft className="h-6 w-6 text-white" />
-        </button>
-        <button
-          onClick={nextSlide}
-          className="absolute right-4 top-1/2 -translate-y-1/2 z-30 bg-white/20 hover:bg-white/30 backdrop-blur-sm p-2 rounded-full transition-all"
-          aria-label="Next slide"
-        >
-          <ChevronRight className="h-6 w-6 text-white" />
-        </button>
 
         {/* Slide Indicators */}
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex gap-2">
