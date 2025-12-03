@@ -1,13 +1,13 @@
-import { Navigation } from "../src/components/Navigation";
-import { Hero } from "../src/components/Hero";
-import { About } from "../src/components/About";
-import { Services } from "../src/components/Services";
-import { ValuePropositions } from "../src/components/ValuePropositions";
-import { ClientsPartners } from "../src/components/ClientsPartners";
-import { ManagementTeam } from "../src/components/ManagementTeam";
-import { FAQ } from "../src/components/FAQ";
-import { Contact } from "../src/components/Contact";
-import { Footer } from "../src/components/Footer";
+import { Navigation } from "../components/Navigation";
+import { Hero } from "../components/Hero";
+import { About } from "../components/About";
+import { Services } from "../components/Services";
+import { ValuePropositions } from "../components/ValuePropositions";
+import { ClientsPartners } from "../components/ClientsPartners";
+import { ManagementTeam } from "../components/ManagementTeam";
+import { FAQ } from "../components/FAQ";
+import { Contact } from "../components/Contact";
+import { Footer } from "../components/Footer";
 
 export default function Home() {
   return (

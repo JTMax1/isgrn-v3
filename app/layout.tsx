@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "../src/index.css";
+import "../index.css";
 
 export const metadata: Metadata = {
   title: "ISGRN - Intelligent Solutions Global Resources Nigeria",

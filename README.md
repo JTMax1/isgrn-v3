@@ -109,27 +109,28 @@ isgrn-v3/
 ├── app/
 │   ├── layout.tsx        # Root layout with metadata
 │   └── page.tsx          # Home page (Next.js App Router)
-├── src/
-│   ├── components/        # React components
-│   │   ├── ui/           # Reusable UI components (Radix UI based)
-│   │   ├── figma/        # Figma-specific components
-│   │   ├── About.tsx
-│   │   ├── ClientsPartners.tsx
-│   │   ├── Contact.tsx
-│   │   ├── FAQ.tsx
-│   │   ├── Footer.tsx
-│   │   ├── Hero.tsx
-│   │   ├── Logo.tsx
-│   │   ├── ManagementTeam.tsx
-│   │   ├── Navigation.tsx
-│   │   ├── Services.tsx
-│   │   └── ValuePropositions.tsx
-│   └── index.css         # Global styles
-├── public/               # Static assets
-├── package.json          # Dependencies and scripts
-├── next.config.ts        # Next.js configuration
-├── tsconfig.json         # TypeScript configuration
-└── README.md             # This file
+├── components/           # React components
+│   ├── ui/              # Reusable UI components (Radix UI based)
+│   ├── figma/           # Figma-specific components
+│   ├── About.tsx
+│   ├── ClientsPartners.tsx
+│   ├── Contact.tsx
+│   ├── FAQ.tsx
+│   ├── Footer.tsx
+│   ├── Hero.tsx
+│   ├── Logo.tsx
+│   ├── ManagementTeam.tsx
+│   ├── Navigation.tsx
+│   ├── Services.tsx
+│   └── ValuePropositions.tsx
+├── styles/              # Style files
+│   └── globals.css
+├── public/              # Static assets
+├── index.css            # Global styles
+├── package.json         # Dependencies and scripts
+├── next.config.ts       # Next.js configuration
+├── tsconfig.json        # TypeScript configuration
+└── README.md            # This file
 ```
 
 ## Basic Troubleshooting
