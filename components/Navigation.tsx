@@ -4,22 +4,23 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
 import { Logo } from "./Logo";
+import Link from "next/link";
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { label: "Home", href: "#home" },
-    { label: "About", href: "#about" },
-    { label: "Services", href: "#services" },
-    { label: "Contact", href: "#contact" },
+    { label: "Home", href: "/" },
+    { label: "About", href: "/about" },
+    { label: "Services", href: "/services" },
+    { label: "Contact", href: "/contact" },
   ];
 
   return (
     <nav className="bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-2">
-          <div className="flex-shrink-0 max-w-xs">
+          <div className="shrink-0 max-w-xs">
             <a href="#home" className="inline-flex items-center">
               <Logo variant="branded" size="xl" className="max-w-xs"/>
             </a>
@@ -28,16 +29,16 @@ export function Navigation() {
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.label}
                 href={item.href}
                 className="text-gray-700 hover:text-blue-600 transition-colors"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
             <Button asChild>
-              <a href="#contact">Get Started</a>
+              <Link href="/contact">Get Started</Link>
             </Button>
           </div>
 

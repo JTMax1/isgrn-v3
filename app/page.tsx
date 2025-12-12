@@ -1,27 +1,25 @@
-import { Navigation } from "../components/Navigation";
 import { Hero } from "../components/Hero";
 import { About } from "../components/About";
 import { Services } from "../components/Services";
+import { VTUServices } from "@/components/vtu/VTUServices";
 import { ValuePropositions } from "../components/ValuePropositions";
 import { ClientsPartners } from "../components/ClientsPartners";
 import { ManagementTeam } from "../components/ManagementTeam";
 import { FAQ } from "../components/FAQ";
 import { Contact } from "../components/Contact";
-import { Footer } from "../components/Footer";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
-      <Navigation />
       <Hero />
       <About />
       <Services />
+      <VTUServices />
       <ValuePropositions />
       <ClientsPartners />
       <ManagementTeam />
       <FAQ />
       <Contact />
-      <Footer />
     </div>
   );
 }
