@@ -5,18 +5,18 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   const quickLinks = [
-    { label: "Home", href: "#home" },
-    { label: "About", href: "#about" },
-    { label: "Services", href: "#services" },
-    { label: "Contact", href: "#contact" },
+    { label: "Home", href: "/" },
+    { label: "About", href: "/about" },
+    { label: "Services", href: "/services" },
+    { label: "Contact", href: "/contact" },
   ];
 
   const services = [
-    { label: "Broadband Network", href: "#services" },
-    { label: "Colocation Services", href: "#services" },
-    { label: "Metro Connectivity", href: "#services" },
-    { label: "Voice Services", href: "#services" },
-    { label: "Training", href: "#services" },
+    { label: "Broadband Network", href: "/services#broadband" },
+    { label: "Colocation Services", href: "/services#colocation" },
+    { label: "Metro Connectivity", href: "/services#metro" },
+    { label: "Voice Services", href: "/services#voice" },
+    { label: "Training", href: "/services#training" },
   ];
 
   return (
@@ -120,10 +120,10 @@ export function Footer() {
             © {currentYear} Intelligent Solutions Global Resources Nigeria. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+            <a href="/privacy" className="text-gray-400 hover:text-blue-400 transition-colors">
               Privacy Policy
             </a>
-            <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+            <a href="/terms" className="text-gray-400 hover:text-blue-400 transition-colors">
               Terms of Service
             </a>
           </div>

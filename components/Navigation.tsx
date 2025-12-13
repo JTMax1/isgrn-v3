@@ -38,7 +38,7 @@ export function Navigation() {
               </Link>
             ))}
             <Button asChild>
-              <Link href="/contact">Get Started</Link>
+              <Link href="/buy/airtime">Buy Airtime</Link>
             </Button>
           </div>
 
