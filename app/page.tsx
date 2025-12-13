@@ -1,7 +1,6 @@
 import { Hero } from "../components/Hero";
 import { About } from "../components/About";
 import { Services } from "../components/Services";
-import { VTUServices } from "@/components/vtu/VTUServices";
 import { ValuePropositions } from "../components/ValuePropositions";
 import { ClientsPartners } from "../components/ClientsPartners";
 import { ManagementTeam } from "../components/ManagementTeam";
@@ -14,7 +13,6 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
-      <VTUServices />
       <ValuePropositions />
       <ClientsPartners />
       <ManagementTeam />

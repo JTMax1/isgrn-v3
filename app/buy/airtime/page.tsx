@@ -148,7 +148,6 @@ export default function BuyAirtime() {
             <ChevronRight className="h-4 w-4" />
             <span className="text-gray-900">Online Airtime</span>
           </div>
-          <h1 className="mt-2">Online Airtime</h1>
         </div>
       </div>
 
