@@ -1,98 +1,85 @@
-import { Wifi, Server, Network, Phone, Smartphone, GraduationCap, Globe } from "lucide-react";
+import { Headset, Phone, Wifi, Network, MessageSquare, Server } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 export function Services() {
   const services = [
     {
-      icon: Wifi,
-      title: "Broadband Multi-Service Network",
-      description: "High-speed data, voice telephony, video conferencing, and surveillance over a single infrastructure. 99.9% availability guarantee with scalable, cost-effective solutions.",
-      image: "https://images.unsplash.com/photo-1594915440248-1e419eba6611?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaWJlciUyMG9wdGljJTIwbmV0d29ya3xlbnwxfHx8fDE3NjM0OTE0NDB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      icon: Headset,
+      title: "Call Center Solutions",
+      description: "Customized inbound and outbound call center services, including customer support, telemarketing, and automated response systems to optimize business operations and enhance customer engagement.",
+      image: "https://images.unsplash.com/photo-1760484560189-b8d3c2477f38?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHBob25lJTIwc3lzdGVtc3xlbnwxfHx8fDE3NjM2MDMzODl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       features: [
-        "Voice telephony and video conferencing",
-        "High-speed internet access",
-        "Video surveillance capabilities",
-        "99.9% uptime SLA",
-        "Non-line-of-sight deployment"
-      ]
-    },
-    {
-      icon: Server,
-      title: "Colocation Services",
-      description: "State-of-the-art data center facilities with power redundancy, cooling, fire suppression, network security, and physical connectivity for your critical infrastructure.",
-      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwY2VudGVyJTIwc2VydmVycyUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzYzNTQ4ODM4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      features: [
-        "Uninterrupted power supply",
-        "Advanced cooling systems",
-        "Fire suppression technology",
-        "24/7 network security",
-        "High availability infrastructure"
-      ]
-    },
-    {
-      icon: Network,
-      title: "Metro Connectivity",
-      description: "Point-to-point and point-to-multipoint fiber connectivity solutions. Scalable, cost-effective network infrastructure with wide metro coverage.",
-      image: "https://images.unsplash.com/photo-1700463108455-956c595bc97b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWxlY29tbXVuaWNhdGlvbnMlMjBuZXR3b3JrJTIwaW5mcmFzdHJ1Y3R1cmV8ZW58MXx8fHwxNzYzNjAzMzg3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      features: [
-        "Point-to-point connectivity",
-        "Point-to-multipoint solutions",
-        "Scalable bandwidth options",
-        "Wide metro footprint",
-        "Enterprise-grade reliability"
+        "Inbound customer support",
+        "Outbound telemarketing",
+        "Automated response systems",
+        "Business operations optimization",
+        "Enhanced customer engagement"
       ]
     },
     {
       icon: Phone,
-      title: "Voice Services",
-      description: "Comprehensive voice solutions including fixed lines, hosted/on-prem PBX, IVR, virtual receptionist, CRM integration, and contact center functionality.",
-      image: "https://images.unsplash.com/photo-1760484560189-b8d3c2477f38?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMHBob25lJTIwc3lzdGVtc3xlbnwxfHx8fDE3NjM2MDMzODl8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      title: "VoIP Services",
+      description: "Voice over Internet Protocol (VoIP) solutions for cost-effective voice communication, featuring high-quality calls, video conferencing, and unified communications platforms that integrate seamlessly with existing infrastructure.",
+      image: "https://images.unsplash.com/photo-1594915440248-1e419eba6611?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmaWJlciUyMG9wdGljJTIwbmV0d29ya3xlbnwxfHx8fDE3NjM0OTE0NDB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       features: [
-        "Traditional fixed telephone lines",
-        "Hosted and on-premise PBX",
-        "IVR and virtual receptionist",
-        "CRM integration",
-        "Voice broadcast services"
+        "Cost-effective voice communication",
+        "High-quality calls",
+        "Video conferencing",
+        "Unified communications platforms",
+        "Seamless infrastructure integration"
       ]
     },
     {
-      icon: Smartphone,
-      title: "Devices & Equipment",
-      description: "4G LTE hubs with built-in wireless routers and VoIP softphone apps. Turn any location into a wireless hotspot with our advanced CPE solutions.",
-      image: "https://images.unsplash.com/photo-1745847768408-b7b83796cae6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3aXJlbGVzcyUyMHJvdXRlciUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzYzNjAzMzg5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      features: [
-        "4G LTE wireless hubs",
-        "VoIP softphone application",
-        "Smart home solutions",
-        "Indoor CPE (no masts required)",
-        "Multi-service single device"
-      ]
-    },
-    {
-      icon: GraduationCap,
-      title: "Training Portfolio",
-      description: "Professional IT and telecommunications training programs to empower your team with the latest industry knowledge and technical skills.",
-      image: "https://images.unsplash.com/photo-1758691736067-b309ee3ef7b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBidXNpbmVzcyUyMHRyYWluaW5nfGVufDF8fHx8MTc2MzU3MjcxNHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-      features: [
-        "IT training programs",
-        "Telecom specialist courses",
-        "Network administration",
-        "Certified instructors",
-        "Hands-on practical sessions"
-      ]
-    },
-    {
-      icon: Globe,
-      title: "IP Wholesale & Backhaul",
-      description: "Wholesale IP capacity for ISPs and telecom operators. Infrastructure and bandwidth solutions for large-scale network deployments.",
+      icon: Wifi,
+      title: "Data Services",
+      description: "High-speed internet and data connectivity options, including broadband and mobile data plans, tailored for reliable access in urban and rural areas.",
       image: "https://images.unsplash.com/photo-1700463108455-956c595bc97b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWxlY29tbXVuaWNhdGlvbnMlMjBuZXR3b3JrJTIwaW5mcmFzdHJ1Y3R1cmV8ZW58MXx8fHwxNzYzNjAzMzg3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
       features: [
-        "IP wholesale capacity",
-        "Backhaul infrastructure",
-        "Carrier-grade solutions",
-        "Scalable bandwidth",
-        "Network interconnection"
+        "High-speed internet",
+        "Broadband connectivity",
+        "Mobile data plans",
+        "Urban and rural coverage",
+        "Reliable access guarantee"
+      ]
+    },
+    {
+      icon: Network,
+      title: "Fiber Optic Services",
+      description: "Deployment and maintenance of fiber optic networks for ultra-fast, low-latency internet, supporting bandwidth-intensive applications like streaming, cloud computing, and enterprise networking.",
+      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwY2VudGVyJTIwc2VydmVycyUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzYzNTQ4ODM4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      features: [
+        "Ultra-fast internet speeds",
+        "Low-latency connectivity",
+        "Streaming and cloud support",
+        "Enterprise networking",
+        "Network deployment and maintenance"
+      ]
+    },
+    {
+      icon: MessageSquare,
+      title: "Bulk SMS Services",
+      description: "Scalable messaging platforms for businesses to send promotional, transactional, and alert SMS in bulk, with features like API integration, scheduling, and analytics for targeted marketing campaigns.",
+      image: "https://images.unsplash.com/photo-1745847768408-b7b83796cae6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3aXJlbGVzcyUyMHJvdXRlciUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzYzNjAzMzg5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      features: [
+        "Promotional messaging",
+        "Transactional alerts",
+        "API integration",
+        "Message scheduling",
+        "Campaign analytics"
+      ]
+    },
+    {
+      icon: Server,
+      title: "Data Centers",
+      description: "Secure, state-of-the-art data center facilities offering colocation, cloud hosting, disaster recovery, and managed services to ensure data integrity, scalability, and compliance with industry standards.",
+      image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXRhJTIwY2VudGVyJTIwc2VydmVycyUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzYzNTQ4ODM4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+      features: [
+        "Colocation services",
+        "Cloud hosting solutions",
+        "Disaster recovery",
+        "Managed services",
+        "Industry compliance standards"
       ]
     }
   ];
@@ -103,8 +90,10 @@ export function Services() {
         <div className="text-center mb-12">
           <h2 className="mb-4">Our Services</h2>
           <p className="text-gray-600 max-w-3xl mx-auto">
-            Comprehensive telecommunications and infrastructure solutions designed to meet the 
-            diverse needs of businesses and individuals across Nigeria.
+            Delivering innovative and reliable telecom solutions to businesses, government entities,
+            and individual clients across Nigeria. Our comprehensive suite of services is backed by
+            robust infrastructure and a team of experts, ensuring minimal downtime and compliance
+            with regulatory requirements.
           </p>
         </div>
 
